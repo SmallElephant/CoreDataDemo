@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C5C0FAA11C9ED4AD0005AB5D"
-               BuildableName = "CoreDataDemo.app"
-               BlueprintName = "CoreDataDemo"
-               ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+               BuildableName = "FECoreData.app"
+               BlueprintName = "FECoreData"
+               ReferencedContainer = "container:FECoreData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C5C0FABD1C9ED4AD0005AB5D"
-               BuildableName = "CoreDataDemoTests.xctest"
-               BlueprintName = "CoreDataDemoTests"
-               ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+               BuildableName = "FECoreData.xctest"
+               BlueprintName = "FECoreDataTests"
+               ReferencedContainer = "container:FECoreData.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C5C0FAC81C9ED4AD0005AB5D"
-               BuildableName = "CoreDataDemoUITests.xctest"
-               BlueprintName = "CoreDataDemoUITests"
-               ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+               BuildableName = "FECoreData.xctest"
+               BlueprintName = "FECoreDataUITests"
+               ReferencedContainer = "container:FECoreData.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C5C0FAA11C9ED4AD0005AB5D"
-            BuildableName = "CoreDataDemo.app"
-            BlueprintName = "CoreDataDemo"
-            ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+            BuildableName = "FECoreData.app"
+            BlueprintName = "FECoreData"
+            ReferencedContainer = "container:FECoreData.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C5C0FAA11C9ED4AD0005AB5D"
-            BuildableName = "CoreDataDemo.app"
-            BlueprintName = "CoreDataDemo"
-            ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+            BuildableName = "FECoreData.app"
+            BlueprintName = "FECoreData"
+            ReferencedContainer = "container:FECoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C5C0FAA11C9ED4AD0005AB5D"
-            BuildableName = "CoreDataDemo.app"
-            BlueprintName = "CoreDataDemo"
-            ReferencedContainer = "container:CoreDataDemo.xcodeproj">
+            BuildableName = "FECoreData.app"
+            BlueprintName = "FECoreData"
+            ReferencedContainer = "container:FECoreData.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
