@@ -56,7 +56,7 @@
     if (self.textField.text.length) {
         insertBook.author=self.textField.text;
         [self.dataManger saveContext];
-        NSLog(@"数据插入成功--%@--",self.textField.text);
+        NSLog(@"FlyElephant add data--%@",self.textField.text);
     }
 }
 
@@ -72,13 +72,11 @@
             [NSException raise:@"查询错误" format:@"%@", [error localizedDescription]];
         }
         for (NSManagedObject *obj in objs) {
-            
-            NSLog(@"作者=%@", [obj valueForKey:@"author"]);
+            NSLog(@"FlyElephant author=%@", [obj valueForKey:@"author"]);
             NSString *updateValue=[NSString stringWithFormat:@"%@修改",[obj valueForKey:@"author"]];
             [obj  setValue:updateValue forKey:@"author"];
         }
         [self.dataManger saveContext];
-        NSLog(@"更新成功");
     }
 }
 
@@ -96,21 +94,7 @@
         for (NSManagedObject *obj in objs) {
             NSLog(@"作者=%@", [obj valueForKey:@"author"]);
         }
-        NSLog(@"查询成功");
-    }else{
-        NSFetchRequest *request =[[NSFetchRequest alloc] init];
-        request.entity = [NSEntityDescription entityForName:NSStringFromClass([Book class]) inManagedObjectContext:self.context];
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"author != ''"];
-        request.predicate = predicate;
-        NSError *error = nil;
-        NSArray *objs = [self.context executeFetchRequest:request error:&error];
-        if (error) {
-            [NSException raise:@"查询错误" format:@"%@", [error localizedDescription]];
-        }
-        for (NSManagedObject *obj in objs) {
-            NSLog(@"作者=%@", [obj valueForKey:@"author"]);
-        }
-        NSLog(@"查询成功");
+        NSLog(@"search success-FlyElephant");
     }
 }
 
@@ -130,7 +114,6 @@
             [self.context deleteObject:obj];
         }
         [self.dataManger saveContext];
-        NSLog(@"删除成功");
     }else{
         NSFetchRequest *request =[[NSFetchRequest alloc] init];
         request.entity = [NSEntityDescription entityForName:NSStringFromClass([Book class]) inManagedObjectContext:self.context];
@@ -146,8 +129,8 @@
             [self.context deleteObject:obj];
         }
         [self.dataManger saveContext];
-        NSLog(@"删除成功");
     }
+    NSLog(@"delete success");
 }
 
 @end

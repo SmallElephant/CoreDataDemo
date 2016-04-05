@@ -34,9 +34,6 @@
     return _managedObjectContext;
 }
 
-
-#pragma mark - Core Data Saving support
-
 - (void)saveContext {
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
@@ -47,5 +44,7 @@
         }
     }
 }
+
+#pragma mark - Core Data Saving support
 
 @end
