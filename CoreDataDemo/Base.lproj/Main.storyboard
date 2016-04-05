@@ -63,6 +63,14 @@
                                     <action selector="deleteData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtM-b9-rYR"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOO-7I-eZd">
+                                <rect key="frame" x="100" y="60" width="400" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hjU-1w-IDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -70,18 +78,24 @@
                             <constraint firstItem="Ne7-2B-w2R" firstAttribute="trailing" secondItem="nrZ-QO-79i" secondAttribute="trailing" id="4Hv-6t-N1H"/>
                             <constraint firstItem="CYo-Iz-gPo" firstAttribute="leading" secondItem="OVO-gf-IbP" secondAttribute="leading" id="BhB-d9-eHS"/>
                             <constraint firstItem="nrZ-QO-79i" firstAttribute="top" secondItem="CYo-Iz-gPo" secondAttribute="bottom" constant="30" id="FO4-vl-k1i"/>
+                            <constraint firstAttribute="trailing" secondItem="xOO-7I-eZd" secondAttribute="trailing" constant="100" id="FU2-XR-7a4"/>
                             <constraint firstItem="CYo-Iz-gPo" firstAttribute="trailing" secondItem="OVO-gf-IbP" secondAttribute="trailing" id="M9E-lC-BJO"/>
                             <constraint firstItem="nrZ-QO-79i" firstAttribute="trailing" secondItem="CYo-Iz-gPo" secondAttribute="trailing" id="N9w-md-CPR"/>
+                            <constraint firstItem="xOO-7I-eZd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Nm2-11-hoR"/>
                             <constraint firstItem="Ne7-2B-w2R" firstAttribute="height" secondItem="nrZ-QO-79i" secondAttribute="height" id="SZ9-30-aA9"/>
                             <constraint firstItem="OVO-gf-IbP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="aN0-9j-TUY"/>
                             <constraint firstAttribute="trailing" secondItem="OVO-gf-IbP" secondAttribute="trailing" constant="100" id="gUN-0L-ccB"/>
                             <constraint firstItem="nrZ-QO-79i" firstAttribute="height" secondItem="CYo-Iz-gPo" secondAttribute="height" id="hXc-iE-SBQ"/>
                             <constraint firstItem="CYo-Iz-gPo" firstAttribute="top" secondItem="OVO-gf-IbP" secondAttribute="bottom" constant="30" id="keL-v6-HnY"/>
                             <constraint firstItem="Ne7-2B-w2R" firstAttribute="top" secondItem="nrZ-QO-79i" secondAttribute="bottom" constant="30" id="p0y-ix-PLh"/>
+                            <constraint firstItem="xOO-7I-eZd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="rTj-BD-bGc"/>
                             <constraint firstItem="nrZ-QO-79i" firstAttribute="leading" secondItem="CYo-Iz-gPo" secondAttribute="leading" id="vIA-VQ-mKc"/>
                             <constraint firstItem="OVO-gf-IbP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="yPu-6e-OCi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="xOO-7I-eZd" id="cDP-ul-R4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
